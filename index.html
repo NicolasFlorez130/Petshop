@@ -6,61 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petshop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
         <top>
-            <ul>
+            <ul class="header-top">
                 <li>Grandes ofertas en comederos</li>
                 <ul>
-                    <li>Español</li>
-                    <li>ARG$</li>
+                    <li>Español <i class="fas fa-sort-down"></i></li>
+                    <li>ARG$ <i class="fas fa-sort-down"></i></li>
                 </ul>
             </ul>
         </top>
         <nav>
-            <ul type="none">
-                <li><img src="img/Logo.png" alt="heroe"></li>
+            <ul>
+                <li><img src="img/Logo.png" alt="heroe" class="logo"></li>
                 <ul>
-                    <li>Categorias</li>
-                    <li>Pets</li>
-                    <li>Nosotros</li>
-                    <li>Contactanos</li>
+                    <li><i class="fas fa-paw"></i>Categorias</li>
+                    <li><i class="fas fa-paw"></i>Pets</li>
+                    <li><i class="fas fa-paw"></i>Nosotros</li>
+                    <li><i class="fas fa-paw"></i>Contactanos</li>
                 </ul>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="Banner">
-            <img src="img/bowl-and-pet-daities-on-green-background 1.png" alt="">
-            <p>¡Es un placer enerte aqui!</p>
+        <section id="banner">
+            <span class="welcome">¡Es un placer tenerte aqui!</span>
             <p>¡Comederos en descuento!</p>
-            <a href="#comedero">COMEDEROS</a>
+            <a href="#comedero" class="comedero-button">COMEDEROS</a>
         </section>
-        <section id="Productos">
-            <p>Imagen patita</p>
-            <p>Productos Destacados</p>
-            <p>Comederos - Accesorios - Comida</p>
+        <section id="products">
+            <div class="presentation">
+                <img src="img/pawprint 1.png" alt="paw image" class="pawprint">
+                <b class="title">Productos Destacados</b>
+                <p>Comederos - Accesorios - Comida</p>
+            </div>
             <card>
-                <img src="img/churrasquito.png" alt="churrasquito">
-                <p>Juguete Churrasquito</p>
-                <p>$150</p>
+                <div class="card">
+                    <img src="img/churrasquito.png" alt="churrasquito"><br>
+                    <b class="product-name">Juguete Churrasquito</b><br>
+                    <b class="price">$150</b>
+                </div>
             </card>
             <card>
-                <img src="img/comedero.png" alt="comedero" id="comedero">
-                <p>Comedero para perro</p>
-                <p>$250</p>
+                <div class="card">
+                    <img src="img/comedero.png" alt="comedero" id="comedero"><br>
+                    <b class="product-name">Comedero para perro</b><br>
+                    <b class="price">$250</b>
+                </div>
             </card>
             <card>
-                <img src="img/Huesito.png" alt="huesito">
-                <p>Juguete huesito</p>
-                <p>$650</p>
+                <div class="card">
+                    <img src="img/Huesito.png" alt="huesito"><br>
+                    <b class="product-name">Juguete huesito</b><br>
+                    <b class="price">$650</b>
+                </div>
             </card>
         </section>
     </main>
     <footer>
-        <p>Todos los derechos reservados Front End</p>
+        <section class="footer-top">
+            <i class="fas fa-paper-plane"></i>
+            <span>Suscribete para mas novedades</span>
+        </section>
+        <section class="footer-middle">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Localidad</span><br>
+            <div class="mid">
+                <i class="fas fa-phone"></i>
+                <span>Telefono</span><br>
+            </div>
+            <i class="fas fa-envelope"></i>
+            <span>Correo Electronico</span><br>
+            <img src="img/Logo(1).png" alt="heroe" class="logo">    
+        </section>
+        <section>
+            <p class="footer-bottom">Todos los derechos reservados Front End</p>
+        </section>
     </footer>
 </body>
 

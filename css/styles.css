@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color:#222222;
+    color: white;
+}
+
+.header-top{
+    margin: 0;
+}
+
+nav{
+    background-color: #F0A83E;
+    margin: 0px;
+}
+
+.logo{
+    width: 166.38px;
+}
+
+#banner{
+    background: #8FD3AD url('../img/bowl-and-pet-daities-on-green-background\ 1.png') no-repeat;
+    background-size:cover;
+    height: 530px;
+}
+
+.welcome{
+    background-color: white;
+    font-size: 35px;
+    padding: 10px;
+}
+
+#banner p{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.comedero-button{
+    color: white;
+    background-color: #F0A83E;
+    padding: 15px 23px;
+}
+
+.pawprint{
+    margin-left: 46.7%;
+    margin-right: 46.7%;
+}
+
+.title{
+    color: #3C2313;
+    font-size: 40px;
+}
+
+#products{
+    color: #666666;
+}
+
+.presentation{
+    margin-bottom: 49px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card{
+    background-color: #FBFAF6;
+    margin: 0px;
+}
+
+.product-name{
+    color: #3C2313;
+}
+
+card b{
+    text-align: center;
+}
+
+card .price{
+    color: #F0A83E;
+}
+
+footer{
+    background: #3C2313;
+    color: white;
+}
+
+.footer-top{
+    background-color: #F0A83E;
+    padding: 1%;
+}
+
+.footer-middle{
+    font-size: 20px;
+    margin-bottom: 33px;
+    margin-top: 33px;
+}
+
+.footer-middle i{
+    font-size: 40px;
+}
+
+.mid{
+    margin-bottom: 63px;
+    margin-top: 63px;
+}
+
+.footer-bottom{
+    background-color: #222222;
+    color:white;
+    margin: 0px;
+    text-align: center;
+}
