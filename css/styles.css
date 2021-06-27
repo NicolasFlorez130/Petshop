@@ -1,124 +1,205 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body{
+body {
+    background: #222222;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
 }
 
-li{
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #F0A83E;
+    font-size: 1px;
+    position: absolute;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-header{
-    background-color:#222222;
+/*header*/
+
+.top {
+    background-color: #222222;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    padding: 2px 0px;
+    width: 1920px;
 }
 
-.header-top{
+nav ul,
+.top ul {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
+    width: 150px;
 }
 
-nav{
+header {
     background-color: #F0A83E;
-    margin: 0px;
+    padding: 25px;
+    position: sticky;
+    top: 0px;
 }
 
-.logo{
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1920px;
+}
+
+.logo {
     width: 166.38px;
 }
 
-#banner{
-    background: #8FD3AD url('../img/bowl-and-pet-daities-on-green-background\ 1.png') no-repeat;
-    background-size:cover;
-    height: 530px;
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
 }
 
-.welcome{
+nav a {
+    color: white;
+}
+
+/*main*/
+
+main {
+    background-color: white;
+}
+
+.banner {
+    align-items: center;
+    background: #8FD3AD url('../img/bowl-and-pet-daities-on-green-background\ 1.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 204.5px 0;
+    width: 674.5px;
+}
+
+.welcome {
     background-color: white;
     font-size: 35px;
-    padding: 10px;
+    margin: 0 50px;
+    padding: 10px 15px;
 }
 
-#banner p{
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.comedero-button{
+.comedero-button {
     color: white;
     background-color: #F0A83E;
+    margin: 0 180px;
     padding: 15px 23px;
 }
 
-.pawprint{
-    margin-left: 46.7%;
-    margin-right: 46.7%;
+.welcome,
+.comedero-button,
+.card img,
+.card {
+    border-radius: 5px;
 }
 
-.title{
+.pawprint {
+    margin: 15px calc(50% - 33.5px);
+}
+
+.title {
     color: #3C2313;
     font-size: 40px;
 }
 
-#products{
-    color: #666666;
-}
-
-.presentation{
+.presentation {
     margin-bottom: 49px;
     margin-top: 20px;
     text-align: center;
 }
 
-.card{
-    background-color: #FBFAF6;
-    margin: 0px;
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 78px;
+    width: 839px;
 }
 
-.product-name{
+.card {
+    background-color: #FBFAF6;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 265px;
+}
+
+.product-name {
     color: #3C2313;
 }
 
-card b{
-    text-align: center;
-}
-
-card .price{
+.price {
     color: #F0A83E;
+    margin: auto 60px 8px;
 }
 
-footer{
+/*footer*/
+
+footer {
     background: #3C2313;
     color: white;
 }
 
-.footer-top{
+.footer-top {
     background-color: #F0A83E;
-    padding: 1%;
+    padding: 15px;
 }
 
-.footer-middle{
-    font-size: 20px;
-    margin-bottom: 33px;
-    margin-top: 33px;
+.footer-middle {
+    align-items: center;
+    display: flex;
+    margin: 30px 0;
+    width: 1920px;
 }
 
-.footer-middle i{
-    font-size: 40px;
+.left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
 }
 
-.mid{
-    margin-bottom: 63px;
-    margin-top: 63px;
+.left img {
+    margin: 10px calc(50% - 89.5px);
 }
 
-.footer-bottom{
+.right {
+    width: 50%;
+}
+
+.right img {
+    margin: 10px calc(50% - 83.1875px);
+}
+
+
+.footer-bottom {
     background-color: #222222;
-    color:white;
     margin: 0px;
     text-align: center;
 }

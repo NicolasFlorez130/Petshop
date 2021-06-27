@@ -12,33 +12,36 @@
 </head>
 
 <body>
-    <header>
-        <top>
-            <ul class="header-top">
-                <li>Grandes ofertas en comederos</li>
-                <ul>
-                    <li>Español <i class="fas fa-sort-down"></i></li>
-                    <li>ARG$ <i class="fas fa-sort-down"></i></li>
-                </ul>
-            </ul>
-        </top>
-        <nav>
+    <div class="container">
+        <section class="top">
+            <span>Grandes ofertas en comederos</span>
             <ul>
-                <li><img src="img/Logo.png" alt="heroe" class="logo"></li>
-                <ul>
-                    <li><i class="fas fa-paw"></i>Categorias</li>
-                    <li><i class="fas fa-paw"></i>Pets</li>
-                    <li><i class="fas fa-paw"></i>Nosotros</li>
-                    <li><i class="fas fa-paw"></i>Contactanos</li>
-                </ul>
+                <li>Español <i class="fas fa-sort-down"></i></li>
+                <li>ARG$ <i class="fas fa-sort-down"></i></li>
             </ul>
-        </nav>
+        </section>
+    </div>
+    <header>
+        <h1>Front Cat&Dog</h1>
+        <div class="container">
+            <nav>
+                <img src="img/Logo.png" alt="heroe" class="logo"></li>
+                <ul>
+                    <li><a href="#"><i class="fas fa-paw"></i>Categorias</a></li>
+                    <li><a href="#"><i class="fas fa-paw"></i>Pets</a></li>
+                    <li><a href="#"><i class="fas fa-paw"></i>Nosotros</a></li>
+                    <li><a href="#"><i class="fas fa-paw"></i>Contactanos </a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="banner">
-            <span class="welcome">¡Es un placer tenerte aqui!</span>
-            <p>¡Comederos en descuento!</p>
-            <a href="#comedero" class="comedero-button">COMEDEROS</a>
+        <section class="banner">
+            <div>
+                <span class="welcome">¡Es un placer tenerte aqui!</span>
+                <p>¡Comederos en descuento!</p>
+                <a href="#comedero" class="comedero-button">COMEDEROS</a>
+            </div>
         </section>
         <section id="products">
             <div class="presentation">
@@ -46,27 +49,25 @@
                 <b class="title">Productos Destacados</b>
                 <p>Comederos - Accesorios - Comida</p>
             </div>
-            <card>
-                <div class="card">
-                    <img src="img/churrasquito.png" alt="churrasquito"><br>
-                    <b class="product-name">Juguete Churrasquito</b><br>
-                    <b class="price">$150</b>
-                </div>
-            </card>
-            <card>
-                <div class="card">
-                    <img src="img/comedero.png" alt="comedero" id="comedero"><br>
-                    <b class="product-name">Comedero para perro</b><br>
-                    <b class="price">$250</b>
-                </div>
-            </card>
-            <card>
-                <div class="card">
-                    <img src="img/Huesito.png" alt="huesito"><br>
-                    <b class="product-name">Juguete huesito</b><br>
-                    <b class="price">$650</b>
-                </div>
-            </card>
+            <div class="container">
+                <sectio class="cards">
+                    <div class="card">
+                        <img src="img/churrasquito.png" alt="churrasquito">
+                        <b class="product-name">Juguete Churrasquito</b>
+                        <b class="price">$150</b>
+                    </div>
+                    <div class="card">
+                        <img src="img/comedero.png" alt="comedero" id="comedero">
+                        <b class="product-name">Comedero para perro</b>
+                        <b class="price">$250</b>
+                    </div>
+                    <div class="card">
+                        <img src="img/Huesito.png" alt="huesito">
+                        <b class="product-name">Juguete huesito</b>
+                        <b class="price">$650</b>
+                    </div>
+                </sectio>
+            </div>
         </section>
     </main>
     <footer>
@@ -74,20 +75,22 @@
             <i class="fas fa-paper-plane"></i>
             <span>Suscribete para mas novedades</span>
         </section>
-        <section class="footer-middle">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Localidad</span><br>
-            <div class="mid">
-                <i class="fas fa-phone"></i>
-                <span>Telefono</span><br>
-            </div>
-            <i class="fas fa-envelope"></i>
-            <span>Correo Electronico</span><br>
-            <img src="img/Logo(1).png" alt="heroe" class="logo">    
-        </section>
+        <div class="container">
+            <section class="footer-middle">
+                <div class="left">
+                    <img src="img/Location.png" alt="location">
+                    <img src="img/Phone.png" alt="phone">
+                    <img src="img/Correo.png" alt="mail">
+                </div>
+                <div class="right">
+                    <img src="img/Logo(1).png" alt="heroe" class="logo">
+                </div>
+            </section>
+        </div>
         <section>
             <p class="footer-bottom">Todos los derechos reservados Front End</p>
         </section>
+
     </footer>
 </body>
 
