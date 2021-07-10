@@ -154,6 +154,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 5px;
     margin-bottom: 78px;
     width: 265px;
 }
@@ -167,6 +168,69 @@ main {
     margin: auto 60px 8px;
 }
 
+h2 {
+    color: #3C2313;
+    font-size: 40px;
+}
+
+.form,
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.form {
+    width: 340px;
+}
+
+
+
+input[type="text"],
+input[type="mail"],
+input[type="tel"],
+input[type="reset"],
+input[type="button"] {
+    background-color: #3C2313;
+    border: 0;
+    border-radius: 15px;
+    color: white;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 14px;
+    width: 340px;
+}
+
+input[type="reset"],
+input[type="button"] {
+    background-color: gray;
+    height: 34px;
+    font-size: 16px;
+    margin: 5px;
+    margin-bottom: 75px;
+    padding: 0;
+    width: 110px;
+    transition: 0.1s;
+}
+
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+input[type="button"] {
+    background-color: #F0A83E;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 10px;
+}
+
 /*footer*/
 
 footer {
@@ -175,8 +239,34 @@ footer {
 }
 
 .footer-top {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #F0A83E;
     padding: 15px;
+}
+
+.footer-top div form {
+    align-items: center;
+}
+
+.footer-top div input[type="mail"],
+.footer-top div input[type="button"] {
+    margin: 0 5px;
+}
+
+.footer-top div input[type="mail"] {
+    background-color: white;
+}
+
+.footer-top div input[type="mail"]::placeholder {
+    color: gray;
+}
+
+.footer-top div input[type="button"] {
+    background: #3C2313;
+    font-size: 12px;
 }
 
 .footer-middle {
@@ -219,9 +309,30 @@ footer {
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+
+    .footer-top {
+        justify-content: center;
+    }
+
+    .footer-top div span {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    .footer-top div form {
+        margin-top: 12px;
+    }
+
+    .footer-top div input[type="mail"] {
+        width: 290px;
+    }
 }
 
 @media screen and (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     .top {
         display: none;
@@ -235,12 +346,20 @@ footer {
         display: block;
     }
 
-    .banner {
-        justify-content: center;
+    .banner div {
+        justify-content: flex-end;
+    }
+
+    .welcome,
+    .banner div p,
+    .comedero-button {
+        margin-right: 25px;
     }
 
     .welcome {
         font-size: 25px;
+        text-align: center;
+        width: 80%;
     }
 
     .cards {
@@ -251,6 +370,34 @@ footer {
 
     .card {
         margin: 25px 0;
+    }
+
+    .form {
+        width: auto;
+    }
+
+    input[type="reset"],
+    input[type="button"] {
+        border-radius: 25px;
+        height: 45px;
+        margin: 45px 5px;
+        width: 199px;
+    }
+
+    .footer-top div input[type="button"],
+    .footer-top div input[type="mail"] {
+        margin: 0 5px;
+    }
+
+    .footer-top div input[type="mail"] {
+        width: 261px;
+    }
+
+    .footer-top div input[type="button"] {
+        height: 35px;
+        font-size: 15px;
+        font-weight: bold;
+        width: 100px
     }
 
     .footer-middle {
