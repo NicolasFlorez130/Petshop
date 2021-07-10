@@ -55,6 +55,7 @@ header {
     padding: 25px;
     position: sticky;
     top: 0px;
+    z-index: 999;
 }
 
 nav {
@@ -211,14 +212,24 @@ input[type="button"] {
     margin-bottom: 75px;
     padding: 0;
     width: 110px;
+}
+
+input[type="reset"],
+input[type="button"],
+.card,
+.comedero-button {
     transition: 0.1s;
 }
 
+
+
 input[type="reset"]:hover,
-input[type="button"]:hover {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+input[type="button"]:hover,
+.card:hover,
+.comedero-button:hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
