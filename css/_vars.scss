@@ -1,0 +1,39 @@
+$main-color: #F0A83E;
+$sec-color: #3C2313;
+$third-color: #222222;
+
+@mixin button {
+    border: 0;
+    border-radius: 15px;
+    color: white;
+    height: 34px;
+    font-size: 16px;
+    margin: 5px;
+    padding: 0;
+    width: 110px;
+    transition: 0.1s;
+
+    &:hover {
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transform: scale(1.05)
+    }
+}
+
+@mixin entrada {
+    border: 0;
+    border-radius: 15px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 14px;
+    width: 340px;
+
+    &::placeholder {
+        color: white;
+        font-size: 10px;
+    }
+}
+
+@mixin logo {
+    width: 166.38px;
+}
